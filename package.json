@@ -6,10 +6,28 @@
   "repository": "git@github.com:adambrgmn/wp-test.git",
   "author": "Adam Bergman <adam@fransvilhelm.com>",
   "license": "MIT",
+  "scripts": {
+    "build:js": "gulp rollup",
+    "build:css": "gulp sass"
+  },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.18.13",
     "chalk": "^2.3.0",
     "dotenv": "^4.0.0",
     "globby": "^6.1.0",
-    "listr": "^0.13.0"
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8",
+    "listr": "^0.13.0",
+    "rollup": "^0.51.7",
+    "rollup-plugin-babel": "^3.0.2"
+  },
+  "dependencies": {
+    "babel-register": "^6.26.0"
   }
 }

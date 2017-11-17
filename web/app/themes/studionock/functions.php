@@ -118,8 +118,9 @@ add_action( 'widgets_init', 'studionock_widgets_init' );
  */
 function studionock_scripts() {
 	wp_enqueue_style( 'studionock-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'studionock-main-styles', get_template_directory_uri() . '/assets/css/main.css', array(), '20151215', 'all' );
 
-	wp_enqueue_script( 'studionock-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'studionock-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', 'true' );
 
 	wp_enqueue_script( 'studionock-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 

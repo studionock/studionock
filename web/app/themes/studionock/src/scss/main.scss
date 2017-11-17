@@ -1,0 +1,10 @@
+@import 'includes/_typgraphy.scss';
+
+.container {
+  display: grid;
+
+  & * {
+    width: 100%;
+    box-shadow: 1px solid black;
+  }
+}
